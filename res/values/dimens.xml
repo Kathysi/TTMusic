@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="default_tabtextsize">18sp</dimen>
+    <dimen name="online_titletextsize">14sp</dimen>
+    <dimen name="rankitem_textsize">12sp</dimen>
+    <dimen name="ranktitleitem_textsize">16sp</dimen>
+    <dimen name="songsnameitem_textsize">16sp</dimen>
+    <dimen name="songsartistitem_textsize">14sp</dimen>
+    <dimen name="play_titlesize">20sp</dimen>
+    <dimen name="play_singersize">18sp</dimen>
+    <dimen name="miniplayer_titlesize">16sp</dimen>
+    <dimen name="miniplayer_songersize">14sp</dimen>
+
+</resources>

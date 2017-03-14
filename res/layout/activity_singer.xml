@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scrollbars="@null"
+            android:background="@color/Gainsboro" >
+
+            <LinearLayout
+                android:id="@+id/radio_sort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Gainsboro"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+
+        <ListView
+            android:id="@+id/radio_listview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/bantouming"
+            android:dividerHeight="0.4dp"
+            android:listSelector="@drawable/buttonselector"
+            android:scrollbars="@null" />
+    </LinearLayout>
+
+</LinearLayout>

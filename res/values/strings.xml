@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">音乐听</string>
+    <string name="jingxuan">精选集</string>
+    <string name="down_starttoast">开始下载</string>
+    <string name="addsongs_toast">添加播放歌曲成功</string>
+    <string name="jingxuanji">精选集</string>
+    <string name="clear_text">清空</string>
+    <string name="down_hastoast">已存在歌曲</string>
+    <string name="down_success">下载完成</string>
+    <string name="down_error">下载失败</string>
+    <string name="toastmsg_more">更多精彩，敬请期待</string>
+    <string name="toast_lovesong">收藏失败</string>
+    <string name="tab_titlelocal">我的</string>
+    <string name="tab_titleonline">在线</string>
+    <string name="online_ranktext">排行榜</string>
+    <string name="online_songtext">歌单</string>
+    <string name="online_radiotext">电台</string>
+    <string name="online_singertext">歌手</string>
+    <string name="no_showtoast">没有收藏歌曲，先去收藏吧</string>
+    <string name="error_showtoast">获取数据异常</string>
+    <string name="shangbanggequ">上榜歌曲</string>
+    <string name="playall_text">全部播放</string>
+    <string name="searchhint_text">歌曲/歌手/专辑</string>
+    <string name="title_song">歌曲</string>
+    <string name="title_album">专辑</string>
+    <string name="title_collect">精选</string>
+    <string name="title_singer">歌手</string>
+    <string name="cainixihuan">精心推荐</string>
+    <string name="hotsingertext">热门歌手</string>
+    <string name="remengedan">热门歌单</string>
+    <string name="more">更多</string>
+    <string name="pop_titletext">正在播放 /</string>
+    <string name="pop_titlelasttext">首</string>
+    <string name="playmode_single">单曲循环</string>
+    <string name="playmode_loop">列表循环</string>
+    <string name="playmode_random">随机播放</string>
+    <string name="dialog_title">退出</string>
+    <string name="dialog_message">是否退出?</string>
+    <string name="dialog_po">后台播放</string>
+    <string name="dialog_no">退出</string>
+    <string name="play_time_init">00:00</string>
+    <string name="nolyc_content">无歌词</string>
+    <string name="local_localsongtext">本地音乐</string>
+    <string name="local_lovesongtext">我的收藏</string>
+    <string name="local_downsongtext">正在下载</string>
+    <string name="local_moretext">更多推荐</string>
+    
+    <string name="album_recom">推荐</string>
+    <string name="album_hot">最热</string>
+    <string name="album_new">最新</string>
+    <string name="album_all">全部</string>
+
+</resources>

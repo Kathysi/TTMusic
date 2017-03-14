@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Gainsboro" >
+
+    <com.ssc.ttmusic.view.CircleImageView
+        android:id="@+id/mini_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:clickable="true"
+        android:src="@drawable/defaulticon" />
+
+    <TextView
+        android:id="@+id/mini_musictext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/mini_icon"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/mini_btnplay"
+        android:layout_toRightOf="@+id/mini_icon"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/miniplayer_titlesize" />
+
+    <TextView
+        android:id="@+id/mini_musicsingertext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mini_icon"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/mini_btnplay"
+        android:layout_toRightOf="@+id/mini_icon"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/miniplayer_songersize" />
+
+    <Button
+        android:id="@+id/mini_playlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_playlist" />
+
+    <Button
+        android:id="@+id/mini_btnplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/mini_playlist"
+        android:background="@drawable/player_btnplay" />
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/Gainsboro" >
+
+        <TextView
+            android:id="@+id/pop_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="@string/pop_titletext"
+            android:textColor="@color/black"
+            android:textSize="@dimen/miniplayer_titlesize" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/pop_songssize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/pop_title"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/miniplayer_titlesize" >
+        </TextView>
+
+        <TextView 
+            android:id="@+id/pop_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/popsongsplaymode"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/caoluse"
+            android:text="清空"
+            android:clickable="true"
+            android:textSize="@dimen/miniplayer_titlesize"
+            />
+        <Button
+            android:id="@+id/popsongsplaymode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/mode_normal" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/pop_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/bantouming"
+        android:dividerHeight="0.4dp"
+        android:listSelector="@drawable/buttonselector"
+        android:scrollbars="@null" />
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/title_relayout"
+    android:background="@color/caoluse" >
+    <Button
+        android:id="@+id/arrow_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="2dp"
+        android:text="@string/online_ranktext"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/img_leftarrow"
+        android:textSize="@dimen/default_tabtextsize"
+        android:background="@color/transparent" />
+    <Button
+        android:id="@+id/search_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/img_searchbutton" />
+
+</RelativeLayout>

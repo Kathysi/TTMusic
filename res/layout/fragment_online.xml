@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="@null" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:id="@+id/viewGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4" >
+
+            <Button
+                android:id="@+id/rankbutton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/buttonselector"
+                android:drawableTop="@drawable/discovery_item_karaoke"
+                android:gravity="center"
+                android:text="@string/online_ranktext"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/online_titletextsize" />
+
+            <Button
+                android:id="@+id/songbutton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/buttonselector"
+                android:drawableTop="@drawable/discovery_item_music_circle"
+                android:gravity="center"
+                android:text="@string/online_songtext"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/online_titletextsize" />
+
+            <Button
+                android:id="@+id/radiobutton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/buttonselector"
+                android:drawableTop="@drawable/discovery_item_mv_channel"
+                android:gravity="center"
+                android:text="@string/online_radiotext"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/online_titletextsize" />
+
+            <Button
+                android:id="@+id/singerbutton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/buttonselector"
+                android:drawableTop="@drawable/discovery_item_singer"
+                android:gravity="center"
+                android:text="@string/online_singertext"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/online_titletextsize" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/bantouming" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                style="@style/OnlineSongTitle"
+                android:text="@string/cainixihuan" />
+
+            <Button
+                android:id="@+id/likemorebutton"
+                style="@style/OnlineSongMore"
+                android:text="@string/more" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/likesonglayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                style="@style/OnlineSongTitle"
+                android:text="@string/remengedan" />
+
+            <Button
+                android:id="@+id/moregedanbutton"
+                style="@style/OnlineSongMore"
+                android:text="@string/more" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/gedanlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <LinearLayout
+                android:id="@+id/first_column"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/second_column"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/thrid_column"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                style="@style/OnlineSongTitle"
+                android:text="@string/hotsingertext" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/hotsingerlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

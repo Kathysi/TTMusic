@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_ticker" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/local_bendiyinyue"
+            style="@style/LocalText"
+            android:text="@string/local_localsongtext" />
+
+        <Button
+            android:id="@+id/local_shoucang"
+            style="@style/LocalText"
+            android:layout_marginRight="10dp"
+            android:text="@string/local_lovesongtext" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/local_xiazai"
+            style="@style/LocalText"
+            android:text="@string/local_downsongtext" />
+
+        <Button
+            android:id="@+id/local_morerecom"
+            style="@style/LocalText"
+            android:layout_marginRight="10dp"
+            android:text="@string/local_moretext" />
+    </LinearLayout>
+
+</LinearLayout>

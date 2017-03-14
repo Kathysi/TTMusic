@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/album_title"
+        layout="@layout/title" />
+
+    <RelativeLayout
+        android:id="@+id/album_category"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/Gainsboro" >
+
+        <TextView
+            android:id="@+id/album_recomtextview"
+            style="@style/AlbumText"
+            android:text="@string/album_recom" />
+
+        <View
+            android:id="@+id/album_recomview"
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/album_recomtextview"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/album_hottextview"
+            style="@style/AlbumText"
+            android:layout_toRightOf="@+id/album_recomview"
+            android:text="@string/album_hot" />
+
+        <View
+            android:id="@+id/album_hotview"
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/album_hottextview"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/album_newtextview"
+            style="@style/AlbumText"
+            android:layout_toRightOf="@+id/album_hotview"
+            android:text="@string/album_new" />
+        <Button 
+            android:id="@+id/album_allbutton"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="@string/album_all"
+            android:textSize="13sp"
+            android:drawableRight="@drawable/open_icon"
+            android:background="@color/white"
+            android:textColor="@color/gray"
+            />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/album_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/bantouming"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/buttonselector"
+        android:scrollbars="@null"
+        android:visibility="visible" />
+
+</LinearLayout>

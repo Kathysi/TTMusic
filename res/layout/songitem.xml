@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/songsitem_ranklistview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/online_titletextsize"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/songsitem_logoimageview"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/songsitem_ranklistview"
+        android:contentDescription="@null"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/songsitem_songnametextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_alignTop="@+id/songsitem_logoimageview"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/songsitem_playimageview"
+        android:layout_toRightOf="@+id/songsitem_logoimageview"
+        android:textColor="@color/black"
+        android:textSize="@dimen/songsnameitem_textsize" />
+
+    <TextView
+        android:id="@+id/songsitem_songartisttextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/songsitem_logoimageview"
+        android:layout_marginLeft="10dp"
+        android:singleLine="true"
+        android:layout_toLeftOf="@+id/songsitem_playimageview"
+        android:layout_toRightOf="@+id/songsitem_logoimageview"
+        android:textColor="@color/gray_white"
+        android:textSize="@dimen/songsartistitem_textsize" />
+
+    <ImageView
+        android:id="@+id/songsitem_playimageview"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/local_music_play" />
+
+</RelativeLayout>

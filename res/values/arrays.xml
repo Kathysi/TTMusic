@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="artistregion">
+        <item>虾米音乐人</item>
+        <item>华语男艺人</item>
+        <item>华语女艺人</item>
+        <item>华语乐队</item>
+        <item>欧美男艺人</item>
+        <item>欧美女艺人</item>
+        <item>欧美乐队</item>
+        <item>日本男艺人</item>
+        <item>日本女艺人</item>
+        <item>日本乐队</item>
+        <item>韩国男艺人</item>
+        <item>韩国女艺人</item>
+        <item>韩国乐队</item>
+    </string-array>
+</resources>
